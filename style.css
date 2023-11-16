@@ -1,9 +1,30 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Azeret Mono', monospace;
+   
 }
+html{
+    scroll-behavior:smooth;
+    }
+
+::-webkit-scrollbar{
+    width:25px ;
+}
+::-webkit-scrollbar-track{
+    background-image:linear-gradient(150deg, rgb(0, 0, 0), rgb(51, 51, 51), rgb(0, 0, 0)) ;
+}
+::-webkit-scrollbar-thumb{
+   
+    background: rgb(2,0,36);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius:3em ;
+border: 2px solid white;
+}
+
 .container{
 max-width:1100px ;
 margin:0 auto;
@@ -11,7 +32,7 @@ margin:0 auto;
 
 body{
     background: rgb(2,0,36);
-
+    
     /*
     background-image: url("imgs/fotofondo.jpg");
     background-size: 100% 100%;
@@ -71,7 +92,7 @@ main h2{
 .boton{
 text-align: center;
 margin-top: 50px;
-margin-bottom: 50px;
+padding-bottom: 50px;
 }
 main button{
     text-align: center;
@@ -172,6 +193,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .proyectos h1{
+    padding-top: 20px;
     text-align: center;
     font-size: 50px;
     color: #FFFFFF;
@@ -179,4 +201,138 @@ font-family: Arial, Helvetica, sans-serif;
 
 .card{
     background-color: black;
+    padding-top: 10px;
+    margin-top: 20px;
+
+}
+
+/* //////////////////////Contacto////////////////////// */
+
+.contacto h1{
+    color: #fff; 
+    font-size: 50px;
+}
+
+.body-contact{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: none;
+    
+}
+
+.formu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+   width: 80%;
+    background-color: #171c6a;
+ }
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formu h2{
+    font-size: 55px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.formu label{
+    width: auto;
+    background-color:#080e7e;
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.formu input, textarea{
+    padding: 17px 25px;
+   
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #f0faf1;
+    color: #101558;
+    outline: none;
+}
+
+.formu input::placeholder textarea::placeholder{
+ color: #b5cab6;
+}
+
+.form-txt{
+ margin-bottom: 30px;
+ display: flex;
+ justify-content: space-between;
+ text-align:center;
+}  
+
+.form-txt a {
+    color:#2ACCCF;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media(max-width:991px){
+    .body-contact{
+        margin-top: 50px;
+        padding: 30px;
+    }
+    .formu{
+padding : 50px 33px;
+width: 100%;
+    }
+
+    .formu input{
+        padding: 15px;
+    }
+
+    .content2 h1
+    {
+        width: 100%;
+    }
+}
+
+
+
+.btn
+{
+    text-align: center;
+    width: auto;
+   
+    border:0;
+    background-image:linear-gradient(150deg, rgb(0, 102, 255), #1721b8, rgb(0, 102, 255)) ;
+    display:inline-flex;
+    padding:4px;
+    cursor:pointer;
+    color:white;
+   transition: .3s;
+    border-radius: 8px;
+}
+
+.btn span
+{
+    width: 100%;
+background-color:#121499;
+padding: 16px 21px;
+border-radius:6px;
+transition: .3s;
+}
+.btn:hover span
+{
+background:none;
+}
+.btn:active 
+{
+    transform: scale(0.9);
 }
