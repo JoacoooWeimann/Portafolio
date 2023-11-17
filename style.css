@@ -63,8 +63,10 @@ background-color: #fff;
 @media screen and (max-width:990px){
     .nav-link:hover {
         width: 20%;
-
-}
+    }
+    .card {
+    width: 200px;
+     }
 }
 /* //////////////////////MAIN////////////////////// */
 main{
@@ -99,8 +101,9 @@ main button{
     width: 200px;
     
     border:2px black;
-    background-image:linear-gradient(150deg, rgb(255, 255, 255), rgb(134, 153, 189), rgb(255, 255, 255)) ;
+    background-image:linear-gradient(150deg, rgba(2,0,36,1), rgb(8, 5, 63), rgba(2,0,36,1)) ;
     display:inline-flex;
+
     padding:4px;
     cursor:pointer;
     color:white;
@@ -111,7 +114,7 @@ main button{
 main button span
 {
     width: 100%;
-    background-image:linear-gradient(150deg, rgba(2,0,36,1), rgb(8, 5, 63), rgba(2,0,36,1)) ;
+    background-image:linear-gradient(150deg, rgb(255, 255, 255), rgb(134, 153, 189), rgb(255, 255, 255)) ;
 
 padding: 16px 21px;
 border-radius:6px;
@@ -187,6 +190,7 @@ main button:active
   transition: all 300ms ease;
 }
 
+
 .red-social a p{
 color: #fff;
 font-family: Arial, Helvetica, sans-serif;
@@ -232,29 +236,32 @@ font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
     text-align: center;
    width: 80%;
-    background-color: #171c6a;
  }
 
 .input-group{
+
+
+    color: #fff;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     text-align: left;
+   
 }
 
 .formu h2{
     font-size: 55px;
-    color:white;
+    color:white;    
     margin-bottom: 20px;
 }
 
 .formu label{
+    color: #fff;
+    background-color: transparent;
     width: auto;
-    background-color:#080e7e;
-    color:black;
+    
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -262,16 +269,17 @@ font-family: Arial, Helvetica, sans-serif;
 
 .formu input, textarea{
     padding: 17px 25px;
-   
     margin-bottom: 20px;
-    background-color: #EDFFF0;
+    border-radius: 20px !important;
     border: 2px solid #f0faf1;
-    color: #101558;
+    color: #fff;
+    background-color: transparent;
     outline: none;
 }
 
 .formu input::placeholder textarea::placeholder{
  color: #b5cab6;
+
 }
 
 .form-txt{
@@ -279,6 +287,7 @@ font-family: Arial, Helvetica, sans-serif;
  display: flex;
  justify-content: space-between;
  text-align:center;
+
 }  
 
 .form-txt a {
@@ -286,6 +295,7 @@ font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
+    
 }
 
 @media(max-width:991px){
@@ -300,7 +310,7 @@ width: 100%;
 
     .formu input{
         padding: 15px;
-    }
+    }   
 
     .content2 h1
     {
@@ -340,4 +350,21 @@ background:none;
 .btn:active 
 {
     transform: scale(0.9);
+}
+
+.contacto .red-social svg {
+    display: inline-block;
+    text-decoration: none;
+    width: 80px;
+    height: 70px;
+    line-height: 45px;
+   color: #FFFFFF;
+  text-align: center;
+   text-align: center;
+  transition: all 300ms ease;
+}
+
+.contacto h{
+color: #FFFFFF;
+text-align: center;
 }
