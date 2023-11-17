@@ -61,11 +61,9 @@ color: black;
 background-color: #fff;
 }
 @media screen and (max-width:990px){
-    .nav-link:hover {
-        width: 20%;
-    }
+
     .card {
-    width: 200px;
+    width: 350px;
      }
 }
 /* //////////////////////MAIN////////////////////// */
