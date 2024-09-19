@@ -186,6 +186,7 @@ main button:active
   text-align: center;
    text-align: center;
   transition: all 300ms ease;
+  margin-bottom: 30PX;
 }
 
 
