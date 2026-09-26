@@ -79,4 +79,4 @@ La primera vez que alguien lo usa, FormSubmit manda un email para **activar** el
 ## Pendiente
 
 - [ ] Reemplazar `imgs/WeimannJoaquin.pdf` por el CV actualizado.
-- [ ] Agregar el link **Demo** de las landings cuando estén en Netlify (está comentado en la tarjeta).
+- [x] Link **Demo** de las landings: https://weimann-landing.netlify.app/
