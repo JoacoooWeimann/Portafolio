@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Azeret Mono', monospace;
-   
+
 }
 html{
     scroll-behavior:smooth;
@@ -39,9 +39,7 @@ color: black;
 background-color: #fff;
 }
 @media screen and (max-width:990px){
- 
 
-    
     .card {
     width: 350px;
      }
@@ -51,45 +49,52 @@ background-color: #fff;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
-  
+
   .navbar-nav .nav-link:hover {
-   
+
     border-radius: 5px;
   }
-  
 
-  
 /* //////////////////////MAIN////////////////////// */
 main{
     text-align: center;
 }
-main h1{
-    font-size: 3.4rem;
-    font-weight: 700;
-   
+.saludo{
+    font-size: 1.9rem;
     color: #fff;
+    margin-bottom: 1rem;
 }
 
-main h2{
-    font-size: 1.9rem;
-    line-height: 1;
+.titulo{
+    font-size: 3.4rem;
+    font-weight: 700;
     color: #fff;
-    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+/* Reemplaza al <p> con border-bottom que estaba dentro del <h1> */
+.titulo span{
+    display: inline-block;
+    border-bottom: 3px solid black;
+}
+
+.subtitulo{
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #fff;
     margin-bottom: 1.5rem;
 }
 
 #tit{
     margin-top: 5%;
 }
-.boton{
-text-align: center;
-padding-bottom: 50px;
-}
-main button{
+.btn-cv{
     text-align: center;
     width: 200px;
-    
+
     border:2px black;
+    text-decoration: none;
     background-image:linear-gradient(150deg, rgb(8, 5, 63), rgb(8, 5, 63), rgb(8, 5, 63)) ;
     display:inline-flex;
 
@@ -100,7 +105,7 @@ main button{
     border-radius: 8px;
 }
 
-main button span
+.btn-cv span
 {
     width: 100%;
     background-image:linear-gradient(150deg,#12425d 33%,  #12425d 67%, #12425d 100%) ;
@@ -109,11 +114,11 @@ padding: 16px 21px;
 border-radius:6px;
 transition: .3s;
 }
-main button:hover span
+.btn-cv:hover span
 {
 background:none;
 }
-main button:active 
+.btn-cv:active
 {
     transform: scale(0.9);
 }
@@ -122,9 +127,11 @@ main button:active
     #tit {
         text-align: center;
     }
-    #tit button {
+    #tit .btn-cv {
         margin-top: 20px;
-       
+    }
+    .titulo{
+        font-size: 2.6rem;
     }
      .row2 {
         flex-direction: column-reverse;
@@ -133,8 +140,11 @@ main button:active
 
 /* //////////////////////conocimientos////////////////////// */
 
+.cono{
+    margin-top: 50px;
+}
+
 .about{
-    height: 25%;
     text-align: left;
    padding-top: 40px;
    padding-bottom: 40px;
@@ -142,13 +152,13 @@ main button:active
 }
 
 .cono p{
-    color: #fff; 
+    color: #fff;
     font-size: 17px;
 }
 
-.about h1{
+.about h2{
     text-decoration: underline;
-    color: #fff; 
+    color: #fff;
     font-size: 50px;
 }
 
@@ -163,27 +173,36 @@ main button:active
     margin-bottom: 20px;
 }
 
+.educacion ul{
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+}
+
 .educacion li{
     font-size: 20px;
     color: #fff;
 }
 
-
-
-
-.educacion h4{
+.contacono p{
     font-style:italic;
     font-size: 15px;
     color: #1f1f1f;
-    margin-left: 30px;
+    margin: 0 0 0 30px;
 }
 
-.red-social a {
+.subgrupo{
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0 15px;
+}
+
+.red-social a,
+.red-social span {
     display: inline-block;
     text-decoration: none;
     width: 80px;
     height: 70px;
-    
+
     padding: 5px;
     line-height: 45px;
    color: #FFFFFF;
@@ -193,15 +212,23 @@ main button:active
   margin-bottom: 30PX;
 }
 
+.red-social p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    margin-top: 8px;
+    white-space: nowrap; /* "VS Code" en una sola línea */
+}
 
-.red-social a p{
-color: #fff;
-font-family: Arial, Helvetica, sans-serif;
+/* Tecnologías secundarias: un poco más chicas */
+.red-social-sm span{
+    height: 60px;
+    opacity: 0.85;
 }
 
 /* //////////////////////Proyectos////////////////////// */
 
-.proyectos h1{
+.proyectos h2{
     padding-top: 20px;
     font-size: 50px;
     color: #FFFFFF;
@@ -212,18 +239,16 @@ font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+
     max-width: 100%;
     gap: 1rem;
 margin-top: 20px;
 }
 
 .content {
-    height: 10rem;
     padding: 1.5rem;
     flex-grow: 1;
-    
-    
+
 }
 
 .card {
@@ -232,7 +257,7 @@ margin-top: 20px;
     flex-direction: column;
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
-    box-shadow: 0px 18px 36px -18px 
+    box-shadow: 0px 18px 36px -18px
     rgba(0,0,0,0.1),
     0px 30px 45px -30px rgba(50,50,93,0.25);
     background-color:#6aa4f7;
@@ -242,12 +267,13 @@ margin-top: 20px;
     padding: 0.25rem;
     min-height: 30rem;
     transition: all 0.2s ease-in-out;
-    
+
 }
 
 .card-tec{
-    background-color: var(--white);
-    color: var(--text);
+    display: flex;
+    gap: 4px;
+    background-color: rgba(255, 255, 255, 0.85);
     z-index: 1;
     position: absolute;
     bottom: 1.25rem;
@@ -257,7 +283,12 @@ margin-top: 20px;
     font-weight: bold;
     bottom:0px;
 }
-.content > h1 {
+.card-tec img{
+    width: 30px;
+    height: 30px;
+}
+
+.content > h3 {
     font-size: 23px;
     margin-bottom: 1rem;
     border: groove black 2px;
@@ -272,108 +303,92 @@ margin-top: 20px;
     font-weight: 500;
 }
 
-.content a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 800;
-}
-
-.content a:hover {
-    color: #0a2540;
-}
-
 .card-background {
     height: 9rem;
     transition: all 0.2s ease-in-out;
     position: relative;
     overflow: hidden;
-    
+
     border-radius: 0.25rem;
     border: groove black 2px;
 }
-
-
 
 .card:hover .card-background {
     height: 12rem;
 }
 
-.card-background img {
+/* ">" = solo la imagen hija directa (la captura), no los íconos de .card-tec */
+.card-background > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.card:hover .action-bottom-bar a {
-    opacity: 1;
+.card-links{
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0 1.5rem 1.5rem;
 }
 
-.action-bottom-bar {
-    display: flex;
-  
-    height: 2.5rem;
-    width: 100%;
-}
-
-.action-bottom-bar a {
-    display: flex;
-    gap: 0.4rem;
-    color: var(--primary-color);
+.card-links a{
+    flex: 1;
+    text-align: center;
+    padding: 8px 12px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #e2e2e2;
+    color: #0a2540;
+    font-weight: 700;
     text-decoration: none;
-    font-weight: 800;
-    opacity: 0;
-    padding: 0 1.5rem;
-    transition: all 0.2s ease-in-out;
-    font-size: 1.6rem;
-    width: 100%;
+    transition: background-color 0.2s, color 0.2s;
 }
 
-.action-bottom-bar a:hover {
-    color: var(--secondary);
+.card-links a:hover{
+    background-color: #0a2540;
+    color: #fff;
 }
 
-.action-bottom-bar a:hover svg {
-    color: var(--secondary);
+.proximos{
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
 }
 
-.action-bottom-bar a svg {
-    transition: all 0.2s ease-in-out;
-}
-
-.arrow {
-    display: none;
-}
-
-.action-bottom-bar a:hover .arrow {
-    display: block;
-}
-
-.action-bottom-bar a:hover .chevron {
-    display: none;
-}
 @media(max-width:991px){
    .proyectos{
     text-align: center;
     }
 }
 
-
 /* //////////////////////Contacto////////////////////// */
 
-.contacto h1{
-    color: #fff; 
+.contacto h2{
+    color: #fff;
     font-size: 50px;
     text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.cont p{
+    color: #fff;
+}
+
+.cont h5{
+    text-align: center;
+    color: white;
+    margin: 20px 0;
 }
 
 .body-contact{
     font-family: Arial, Helvetica, sans-serif;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
     transform: none;
-    
+
 }
 .contacto .red-social a {
   margin-bottom: 0px;
@@ -383,7 +398,6 @@ margin-top: 20px;
     font-size: 50px;
   }
 
-  
   .red-social a.instagram:hover {
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     color: #fff;
@@ -392,7 +406,7 @@ margin-top: 20px;
   }
 
   .red-social a.github:hover {
-    background-color: #6e5494; 
+    background-color: #6e5494;
     color: #fff;
     border-radius: 10px;
     padding:4px;
@@ -415,34 +429,19 @@ margin-top: 20px;
 
 .input-group{
 
-
     color: #fff;
     background-color: transparent;
     display: flex;
     flex-direction: column;
     text-align: left;
-   
+
 }
 
-.formu h2{
-    font-size: 55px;
-    color:white;    
-    margin-bottom: 20px;
-}
-
-.formu label{
-    color: #fff;
-    background-color: transparent;
-    width: auto;
-    
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.formu input, textarea{
+.formu input,
+.formu textarea{
     padding: 17px 25px;
     margin-bottom: 20px;
+    width: 100%;
     border-radius: 20px !important;
     border: 2px solid #f0faf1;
     color: #fff;
@@ -450,25 +449,10 @@ margin-top: 20px;
     outline: none;
 }
 
-.formu input::placeholder textarea::placeholder{
+.formu input::placeholder,
+.formu textarea::placeholder{
  color: #b5cab6;
 
-}
-
-.form-txt{
- margin-bottom: 30px;
- display: flex;
- justify-content: space-between;
- text-align:center;
-
-}  
-
-.form-txt a {
-    color:#2ACCCF;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    
 }
 
 @media(max-width:991px){
@@ -483,66 +467,29 @@ width: 100%;
 
     .formu input{
         padding: 15px;
-    }   
-
-    .content2 h1
-    {
-        width: 100%;
     }
 }
 
-
-
-.btn
-{
-    text-align: center;
-    width: auto;
-   
-    border:0;
-    background-image:linear-gradient(150deg, rgb(0, 102, 255), #1721b8, rgb(0, 102, 255)) ;
-    display:inline-flex;
-    padding:4px;
-    cursor:pointer;
-    color:white;
-   transition: .3s;
-    border-radius: 8px;
-}
-
-.btn span
-{
+/* Antes era un <input> con clase .btn, que pisaba la clase .btn de Bootstrap */
+.btn-enviar{
     width: 100%;
-background-color:#121499;
-padding: 16px 21px;
-border-radius:6px;
-transition: .3s;
-}
-.btn:hover span
-{
-background:none;
-}
-.btn:active 
-{
-    transform: scale(0.9);
+    padding: 15px;
+    border: 2px solid #f0faf1;
+    border-radius: 20px;
+    background-image: linear-gradient(150deg, rgb(0, 102, 255), #1721b8, rgb(0, 102, 255));
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: filter .3s, transform .1s;
 }
 
-.contacto .red-social svg {
-    display: inline-block;
-    text-decoration: none;
-    width: 80px;
-    height: 70px;
-    line-height: 45px;
-   color: #FFFFFF;
-  text-align: center;
-   text-align: center;
-  transition: all 300ms ease;
+.btn-enviar:hover{
+    filter: brightness(1.2);
 }
 
-header .py-5 {
-    padding-top: 0rem !important;
-    padding-bottom: 3rem !important;
+.btn-enviar:active{
+    transform: scale(0.97);
 }
-
-
 
 @media(max-width:991px){
 .cont{
@@ -555,5 +502,14 @@ header .py-5 {
     .cont h5{
         padding-right: 70px;
     }
-   
+
     }
+
+/* //////////////////////Footer////////////////////// */
+.footer{
+    text-align: center;
+    color: #b5cab6;
+    font-size: 14px;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
