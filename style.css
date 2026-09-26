@@ -183,6 +183,10 @@ background:none;
     color: #fff;
 }
 
+.contacono{
+    margin-bottom: 12px;
+}
+
 .contacono p{
     font-style:italic;
     font-size: 15px;
@@ -224,6 +228,48 @@ background:none;
 .red-social-sm span{
     height: 60px;
     opacity: 0.85;
+}
+
+/* Experiencia: tarjetas semitransparentes para no romper el fondo degradado */
+.experiencia{
+    margin: 20px 0 40px;
+}
+
+.experiencia h3{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.exp-item{
+    height: 100%;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+.exp-item h4{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.exp-lugar{
+    font-style: italic;
+    font-size: 14px;
+    color: #9fd3e6;
+    margin-bottom: 12px;
+}
+
+.exp-item ul{
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.exp-item li{
+    font-size: 15px;
+    margin-bottom: 6px;
 }
 
 /* //////////////////////Proyectos////////////////////// */
