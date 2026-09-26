@@ -1,0 +1,12 @@
+# Configuración de Netlify: sitio estático, se publica la carpeta tal cual
+[build]
+  publish = "."
+
+# Cabeceras de seguridad para todas las páginas
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"             # nadie puede mostrar el sitio dentro de un iframe
+    X-Content-Type-Options = "nosniff"         # el navegador no "adivina" tipos de archivo
+    Referrer-Policy = "strict-origin-when-cross-origin"  # no filtra URLs completas a otros sitios
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"  # el sitio no pide cámara, micrófono ni ubicación

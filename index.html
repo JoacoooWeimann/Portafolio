@@ -250,6 +250,8 @@
                   <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
                   <input type="hidden" name="_next" value="https://joacoooweimann.github.io/Portafolio/">
                   <input type="hidden" name="_captcha" value="false">
+                  <!-- Honeypot anti-spam: invisible para personas; si un bot lo completa, FormSubmit descarta el mensaje -->
+                  <input type="text" name="_honey" class="d-none" tabindex="-1" autocomplete="off">
                   <button class="btn-enviar" type="submit">Enviar</button>
                 </div>
               </form>

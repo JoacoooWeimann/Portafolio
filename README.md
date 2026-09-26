@@ -85,3 +85,12 @@ La primera vez que alguien lo usa, FormSubmit manda un email para **activar** el
 
 - [x] CV actualizado en `imgs/WeimannJoaquin.pdf`. Para cambiarlo en el futuro, reemplazar el archivo con el mismo nombre.
 - [x] Link **Demo** de las landings: https://weimann-landing.netlify.app/
+
+---
+
+## Seguridad y privacidad
+
+- **No subir datos sensibles** (DNI, dirección, fecha de nacimiento) al repo: todo lo que se sube queda en el **historial de Git**, aunque después se reemplace el archivo. Para sacarlo hay que reescribir el historial.
+- `netlify.toml` agrega cabeceras HTTP de seguridad cuando el sitio se publica en Netlify.
+- El formulario tiene un campo **honeypot** (`_honey`) oculto para frenar bots de spam.
+- Los commits usan el email privado de GitHub (`...@users.noreply.github.com`) en lugar del personal.
