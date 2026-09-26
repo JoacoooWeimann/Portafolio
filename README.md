@@ -59,10 +59,12 @@ La primera vez que alguien lo usa, FormSubmit manda un email para **activar** el
 **Contenido**
 - Título: "Desarrollador Web Jr." (antes: "Técnico informático", que pasó a Educación).
 - "Sobre mí" actualizado: edad, UTN, trabajo actual, stack y que estoy aprendiendo Node.js.
-- Educación: se agregó Ingeniería en Sistemas (UTN) y una sección de **Idiomas**.
-- Nueva sección **Experiencia** (soporte técnico y pasantía), tomada del CV.
+- Educación: se agregó Ingeniería en Sistemas (UTN). El inglés B1 figura como chip en "Sobre mí".
+- Nueva sección **Experiencia** con el trabajo actual (soporte técnico), tomada del CV.
 - CV actualizado y link de LinkedIn corregido.
-- Conocimientos divididos en: los que uso, **Aprendiendo** (Node.js) y **Usé en la escuela** (PHP, MySQL, Laravel).
+- **Stack** (HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, Git) y **Aprendiendo** (Node.js).
+- "Sobre mí", Educación, Stack y Experiencia pasaron de texto plano a **paneles** (`.panel`) con íconos de Bootstrap Icons. Los datos clave están en "chips" y la educación en una línea de tiempo hecha con `border-left` + `::before`.
+- Proyectos: se sumó una tarjeta "Próximo proyecto" con borde punteado (`.card-proximo`). Cuando esté listo el siguiente proyecto, se reemplaza por su tarjeta.
 - Proyectos: se reemplazaron los proyectos escolares por las [Landing Pages para comercios](https://github.com/JoacoooWeimann/landing-pages), con link al código.
 - Etiquetas `og:` para que el link se vea con título e imagen al compartirlo en WhatsApp o LinkedIn.
 

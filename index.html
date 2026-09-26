@@ -67,94 +67,89 @@
 
     <section class="cono" id="conocimientos">
       <div class="container">
+
+        <!-- Sobre mí: texto corto + datos destacados en "chips" -->
         <div class="about">
           <h2>Sobre mí</h2>
-          <p>
-            Soy Joaquín Weimann, tengo 21 años y vivo en Buenos Aires, Argentina.
-            Soy técnico informático, estudio Ingeniería en Sistemas en la UTN y trabajo
-            en soporte técnico. Mi objetivo es el desarrollo web: construyo sitios con
-            HTML, CSS, JavaScript y Bootstrap, y estoy aprendiendo Node.js para sumar backend.
-            Busco mi primera experiencia profesional como desarrollador.
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="educacion col-lg-4">
-            <h3>Educación:</h3>
-            <ul>
-              <li>Ingeniería en Sistemas</li>
+          <div class="panel">
+            <p>
+              Tengo 21 años, soy técnico informático y estudiante de Ingeniería en Sistemas. Hoy trabajo en
+              soporte técnico y mi objetivo es el desarrollo web: construyo sitios con HTML, CSS,
+              JavaScript, Bootstrap y PHP, y estoy aprendiendo Node.js para sumar backend.
+              Busco mi primera experiencia profesional como desarrollador.
+            </p>
+            <ul class="chips">
+              <li><i class="bi bi-mortarboard-fill"></i> Ingeniería en Sistemas · UTN</li>
+              <li><i class="bi bi-pc-display"></i> Soporte técnico IT</li>
+              <li><i class="bi bi-geo-alt-fill"></i> Buenos Aires, Argentina</li>
+              <li><i class="bi bi-translate"></i> Inglés intermedio (B1)</li>
             </ul>
-            <div class="contacono">
-              <p>Universidad Tecnológica Nacional (UTN)</p>
-              <p>2025 - Actualidad</p>
-            </div>
-            <ul>
-              <li>Técnico Informático</li>
-            </ul>
-            <div class="contacono">
-              <p>Escuela Técnica N°1 de Grand Bourg</p>
-              <p>2018 - 2024</p>
-            </div>
-
-            <h3 class="mt-4">Idiomas:</h3>
-            <ul>
-              <li>Español: nativo</li>
-              <li>Inglés: intermedio (B1)</li>
-            </ul>
-          </div>
-
-          <div class="educacion col-lg-8">
-            <h3>Conocimientos:</h3>
-            <div class="red-social">
-              <span><img src="imgs/HTML.svg" width="45" height="45" alt=""><p>HTML</p></span>
-              <span><img src="imgs/CSS.svg" width="45" height="45" alt=""><p>CSS</p></span>
-              <span><img src="imgs/JavaScript.svg" width="45" height="45" alt=""><p>JavaScript</p></span>
-              <span><img src="imgs/Bootstrap.svg" width="45" height="45" alt=""><p>Bootstrap</p></span>
-              <span><img src="imgs/Git.svg" width="45" height="45" alt=""><p>Git</p></span>
-              <span><img src="imgs/Github-Dark.svg" width="45" height="45" alt=""><p>GitHub</p></span>
-              <span><img src="imgs/VSCode-Dark.svg" width="45" height="45" alt=""><p>VS Code</p></span>
-            </div>
-
-            <h4 class="subgrupo">Aprendiendo:</h4>
-            <div class="red-social">
-              <span><img src="imgs/NodeJS.svg" width="45" height="45" alt=""><p>Node.js</p></span>
-            </div>
-
-            <h4 class="subgrupo">Usé en la escuela:</h4>
-            <div class="red-social red-social-sm">
-              <span><img src="imgs/PHP-Dark.svg" width="35" height="35" alt=""><p>PHP</p></span>
-              <span><img src="imgs/MySQL-Dark.svg" width="35" height="35" alt=""><p>MySQL</p></span>
-              <span><img src="imgs/Laravel-Dark.svg" width="35" height="35" alt=""><p>Laravel</p></span>
-            </div>
           </div>
         </div>
 
+        <div class="row g-4">
+          <!-- Educación: línea con puntos, como en el CV -->
+          <div class="col-lg-4">
+            <div class="panel h-100">
+              <h3><i class="bi bi-mortarboard"></i> Educación</h3>
+              <ul class="timeline">
+                <li>
+                  <strong>Ingeniería en Sistemas</strong>
+                  <span>Universidad Tecnológica Nacional</span>
+                  <small>2025 - Actualidad</small>
+                </li>
+                <li>
+                  <strong>Técnico Informático</strong>
+                  <span>Escuela Técnica N°1 de Grand Bourg</span>
+                  <small>2018 - 2024</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Stack -->
+          <div class="col-lg-8">
+            <div class="panel h-100">
+              <h3><i class="bi bi-code-slash"></i> Stack</h3>
+              <div class="red-social">
+                <span><img src="imgs/HTML.svg" width="45" height="45" alt=""><p>HTML</p></span>
+                <span><img src="imgs/CSS.svg" width="45" height="45" alt=""><p>CSS</p></span>
+                <span><img src="imgs/JavaScript.svg" width="45" height="45" alt=""><p>JavaScript</p></span>
+                <span><img src="imgs/Bootstrap.svg" width="45" height="45" alt=""><p>Bootstrap</p></span>
+                <span><img src="imgs/PHP-Dark.svg" width="45" height="45" alt=""><p>PHP</p></span>
+                <span><img src="imgs/MySQL-Dark.svg" width="45" height="45" alt=""><p>MySQL</p></span>
+                <span><img src="imgs/Git.svg" width="45" height="45" alt=""><p>Git</p></span>
+                <span><img src="imgs/Github-Dark.svg" width="45" height="45" alt=""><p>GitHub</p></span>
+                <span><img src="imgs/VSCode-Dark.svg" width="45" height="45" alt=""><p>VS Code</p></span>
+              </div>
+
+              <h4 class="subgrupo"><i class="bi bi-rocket-takeoff"></i> Aprendiendo:</h4>
+              <div class="red-social">
+                <span><img src="imgs/NodeJS.svg" width="45" height="45" alt=""><p>Node.js</p></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiencia -->
         <div class="experiencia">
-          <h3>Experiencia:</h3>
-          <div class="row g-3">
-            <div class="col-lg-6">
-              <div class="exp-item">
+          <div class="panel">
+            <h3><i class="bi bi-briefcase"></i> Experiencia</h3>
+            <div class="exp-item">
+              <div class="exp-head">
                 <h4>Soporte Técnico Informático</h4>
-                <p class="exp-lugar">Centro de Operaciones Municipal · Abril 2025 - Actualidad</p>
-                <ul>
-                  <li>Soporte presencial y remoto a usuarios, con seguimiento de incidencias por ticketera.</li>
-                  <li>Diagnóstico, mantenimiento y actualización de computadoras en entornos Windows.</li>
-                  <li>Armado y mantenimiento de infraestructura de red, cámaras de seguridad y radioenlaces.</li>
-                </ul>
+                <span class="badge-actual">Actual</span>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="exp-item">
-                <h4>Pasante Técnico Informático</h4>
-                <p class="exp-lugar">Electronorte, San Miguel · Junio 2024 - Septiembre 2024</p>
-                <ul>
-                  <li>Reparación y mantenimiento de electrodomésticos.</li>
-                  <li>Apoyo en logística, compras y control de productos.</li>
-                </ul>
-              </div>
+              <p class="exp-lugar">Centro de Operaciones Municipal · Abril 2025 - Actualidad</p>
+              <ul>
+                <li>Soporte presencial y remoto a usuarios, con seguimiento de incidencias por ticketera.</li>
+                <li>Diagnóstico, mantenimiento y actualización de computadoras en entornos Windows.</li>
+                <li>Armado y mantenimiento de infraestructura de red, cámaras de seguridad y radioenlaces.</li>
+              </ul>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -195,8 +190,31 @@
             </div>
           </article>
 
+          <!-- Tarjeta "próximamente": reemplazarla por el próximo proyecto cuando esté listo -->
+          <article class="card card-proximo">
+            <div class="card-background proximo-bg">
+              <i class="bi bi-hourglass-split"></i>
+              <div class="card-tec">
+                <img src="imgs/NodeJS.svg" alt="Node.js" title="Node.js">
+                <img src="imgs/JavaScript.svg" alt="JavaScript" title="JavaScript">
+              </div>
+            </div>
+            <div class="content">
+              <h3>Próximo proyecto <br>en desarrollo</h3>
+              <p>
+                Estoy aprendiendo Node.js para sumar backend a mis proyectos.
+                Muy pronto, nuevos trabajos en esta sección.
+              </p>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/JoacoooWeimann" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Ver mi GitHub
+              </a>
+            </div>
+          </article>
+
         </div>
-        <p class="proximos">Más proyectos en camino: actualmente estoy trabajando con Node.js.</p>
+
       </div>
     </section>
 
