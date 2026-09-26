@@ -50,17 +50,13 @@ GitHub Pages solo sirve archivos estáticos: no puede procesar un formulario. Po
   <input type="hidden" name="_captcha" value="false">     <!-- sin captcha intermedio -->
 ```
 
-La primera vez que alguien lo usa, FormSubmit manda un email para **activar** el formulario.
-
----
-
 ## Cambios de la actualización 2026
 
 **Contenido**
 - Título: "Desarrollador Web Jr." (antes: "Técnico informático", que pasó a Educación).
 - "Sobre mí" actualizado: edad, UTN, trabajo actual, stack y que estoy aprendiendo Node.js.
 - Educación: se agregó Ingeniería en Sistemas (UTN). El inglés B1 figura como chip en "Sobre mí".
-- Nueva sección **Experiencia** con el trabajo actual (soporte técnico), tomada del CV.
+- Nueva sección **Experiencia** con el trabajo actual (soporte técnico).
 - CV actualizado y link de LinkedIn corregido.
 - **Stack** (HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, Git) y **Aprendiendo** (Node.js).
 - "Sobre mí", Educación, Stack y Experiencia pasaron de texto plano a **paneles** (`.panel`) con íconos de Bootstrap Icons. Los datos clave están en "chips" y la educación en una línea de tiempo hecha con `border-left` + `::before`.
@@ -84,7 +80,6 @@ La primera vez que alguien lo usa, FormSubmit manda un email para **activar** el
 ## Pendiente
 
 - [x] CV actualizado en `imgs/WeimannJoaquin.pdf`. Para cambiarlo en el futuro, reemplazar el archivo con el mismo nombre.
-- [x] Link **Demo** de las landings: https://weimann-landing.netlify.app/
 
 ---
 
